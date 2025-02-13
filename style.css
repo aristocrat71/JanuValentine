@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffccd5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    width: 400px;
+}
+h3 {
+    color: #e63946;
+}
+p {
+    font-size: 18px;
+    color: #555;
+}
+.heart {
+    color: red;
+    font-size: 50px;
+    animation: heartbeat 1s infinite;
+}
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+#clickme {
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#clickme:hover {
+    background-color: #ff0000;
+}
+
+#dare {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #e63946;
+}
